@@ -373,7 +373,7 @@ if (!token || token === "undefined" || token === "null") {
 }
 
     try {
-        const res = await fetch("http://127.0.0.1:5000/opportunities", {
+        const res = await fetch("https://certify-assignment-by-kvcs.onrender.com/opportunities", {
             method: "POST",
             headers: {
     "Content-Type": "application/json",
@@ -405,7 +405,7 @@ if (!token || token === "undefined" || token === "null") {
 
 async function loadOpportunities() {
     try {
-        const res = await fetch("http://127.0.0.1:5000/opportunities", {
+        const res = await fetch("https://certify-assignment-by-kvcs.onrender.com/opportunities", {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")
             }
@@ -696,7 +696,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const password = document.getElementById('loginPassword').value.trim();
 
     try {
-        const res = await fetch("http://127.0.0.1:5000/login", {
+        const res = await fetch("https://certify-assignment-by-kvcs.onrender.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
